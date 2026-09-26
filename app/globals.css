@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins), "Poppins", sans-serif;
+  --font-mono: var(--font-poppins), "Poppins", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: #ffffff;
+  color: var(--foreground);
+  font-family: var(--font-poppins), "Poppins", sans-serif;
+}
+
+.spotlight {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.spotlight-header {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transform-origin: bottom center;
+  will-change: transform;
+  /* background-color: #070c0b; */
+  padding: 1rem 6rem;
+}
+
+.spotlight-header svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.spotlight-stage .spotlight-header:nth-child(1) svg path {
+  fill: #124031 !important;
+  opacity: 0.2;
+}
+
+.spotlight-stage .spotlight-header:nth-child(2) svg path {
+  fill: #1f7055 !important;
+  opacity: 0.3;
+}
+
+.spotlight-stage .spotlight-header:nth-child(3) svg path {
+  fill: #2ca079 !important;
+  opacity: 0.4;
+}
+
+.spotlight-stage .spotlight-header:nth-child(4) svg path {
+  fill: #3fca9c !important;
+  opacity: 0.5;
+}
+
+.spotlight-stage .spotlight-header:nth-child(5) svg path {
+  fill: #6fd8b5 !important;
+  opacity: 0.6;
+}
+
+.spotlight-stage .spotlight-header:nth-child(6) svg path {
+  fill: #8ee0c4 !important;
+  stroke: #106441 !important;
+  stroke-width: 0.15px !important;
+  /* filter: drop-shadow(0 0 10px #106441) ; */
+}
+
+.spotlight .i-link-text {
+  fill: #10211b;
+  text-anchor: middle;
+  dominant-baseline: central;
+  text-transform: uppercase;
+  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 0.85px;
+}
