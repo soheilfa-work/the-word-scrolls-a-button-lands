@@ -2,7 +2,8 @@
 
 Thinkly is a one-page site where the word THINK is stacked in six layers. Scroll, and the layers fall back until the letter I drops, turns, and scrambles into **LETS DO IT**.
 
-**Live demo:** [your-demo-url.vercel.app](https://your-demo-url.vercel.app)
+**Live demo:**
+https://the-word-scrolls-a-button-lands.vercel.app/
 
 ## Run it
 
